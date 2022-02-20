@@ -1,0 +1,22 @@
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      default_schema: public
+      ddl-auto: update
+    properties:
+      hibernate:
+        order_inserts: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        jdbc:
+          batch_size: 50
+          lob:
+            non_contextual_creation: true
+        temp:
+          use_jdbc_metadata_defaults: false
+
+datasource:
+url: jdbc:postgresql://ec2-34-233-157-189.compute-1.amazonaws.com:5432/d5nvvmehmt4jf1?user=dxybakejoclbso&password=f5c73fde4c168fee96caf411c74ebd03f6513e72a2d386d606ccd0767a800550
+driver-class-name: org.postgresql.Driver
+username:
+password:
